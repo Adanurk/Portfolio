@@ -6,15 +6,17 @@
 
 ## Project Skeleton
 
-> Portfolio
-> │----README.md
-> │----package.json
-> |----package-lock.json
-> └───src
-> │----│----index.html
-> │----└───styles
-> |----└───scss
-> |----|----└───main.scss
-> |----└───images
-> |----└───fonts
-> └───dist
+```
+Portfolio
+│    README.md
+│    package.json
+|    package-lock.json
+└───src
+│    │    index.html
+│    └───styles
+|    └───scss
+|    |    └───main.scss
+|    └───images
+|    └───fonts
+└───dist
+```
