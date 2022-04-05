@@ -48,8 +48,9 @@ nav ul li a:hover {
 
 main {
   width: 70vw;
-  height: 300px;
+  height: 700px;
   margin: 0 auto;
+  padding: 10px;
 }
 main h1 {
   color: #364E98;
@@ -60,6 +61,14 @@ main h1 {
 }
 main .bottom {
   text-align: end;
+}
+main .car img {
+  width: 30px;
+}
+
+.contact {
+  width: 100vw;
+  background-color: #364E98;
 }
 
 /*# sourceMappingURL=styles.css.map */
