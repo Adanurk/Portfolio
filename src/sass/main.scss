@@ -5,6 +5,10 @@ body{
     font-family: 'Lora', serif;
 }
 
+li{
+    list-style-type: none;
+}
+
 nav{
     ul{
         display: flex;
@@ -12,7 +16,6 @@ nav{
         justify-content: center;
         li{
             padding: 5px;
-            list-style-type: none;
             margin: auto 10px;
             color: $secondColor;
             a{
@@ -46,8 +49,8 @@ nav{
 }
 
 main{
-    width: 70vw;
-    height: 700px;
+    width: 55vw;
+    height: 100vh;
     margin: 0 auto;
     padding: 10px;
     h1{
@@ -61,13 +64,78 @@ main{
         text-align: end;
     }
     .car{
+        z-index: -2;
         img{
-            width: 30px;
+            max-width: 55vw;
         }
     }
 }
 
 .contact{
     width: 100vw;
+    height: 100vh;
     background-color: $primaryColor;
+    color: white;
+    position: relative;
+    .big{
+        width: 55vw;
+        max-width: 704px;
+        margin:0 22.5vw;
+        position: absolute;
+        top: 50px;
+
+        h1{
+            font-size: 3rem;
+            
+        }
+        ul{
+            display: flex;
+            padding: 5px 0;
+            li{
+                padding-right: 5px;
+                margin-right: 2rem;
+                a{
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        form{
+            margin-top: 60px;
+            .part{
+                margin-top: 30px;
+               label{
+                   display: block;
+               }
+               input, textarea{
+                   width: 100%;
+                   background-color: $backColor;
+                   outline: none;
+                   border: none;
+                   padding: 10px;
+                   font-size: 0.8rem;
+               }
+            }
+            .but{
+                padding-top:35px;
+                button{
+                    padding:1rem;
+                    width: 20% ;
+                    border: none;
+                }
+            }
+            
+
+        }
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        h6{
+            width: 100vw;
+            text-align: center;
+        }
+    }          
+
 }
