@@ -1,2 +1,51 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Lora", serif;
+}
+
+a {
+  color: #2A2F3F;
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  padding: 2px;
+}
+
+.motion:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+}
+nav ul li {
+  padding: 5px;
+  list-style-type: none;
+  margin: auto 10px;
+  color: #2A2F3F;
+}
+nav ul li a:hover {
+  color: #2A2F3F;
+}
+
+h1 {
+  color: #364E98;
+  font-size: 4rem;
+  line-height: 3rem;
+}
+
+main {
+  width: 70vw;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

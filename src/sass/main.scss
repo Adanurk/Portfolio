@@ -1,4 +1,54 @@
-@import "./reset";
-@import "./variables";
+@import "variables";
+@import "reset";
+
+body{
+    font-family: 'Lora', serif;
+}
+
+a{
+    color: $secondColor;
+    text-decoration: none;
+}
+
+.dropdown-toggle{
+    padding: 2px;
+}
+
+.motion:hover{
+    cursor: pointer;
+}
 
 
+
+nav{
+    ul{
+        display: flex;
+        padding: 7px;
+        justify-content: center;
+        li{
+            padding: 5px;
+            list-style-type: none;
+            margin: auto 10px;
+            color: $secondColor;
+        a:hover{
+            color: $secondColor;
+        }
+    }
+    }
+}
+
+h1{
+    color: $primaryColor;
+    font-size: 4rem;
+    line-height: 3rem;
+    
+    
+
+}
+
+main{
+    width: 70vw;
+    height: 300px;
+    margin: 0 auto;
+
+}
