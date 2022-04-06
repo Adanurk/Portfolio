@@ -126,17 +126,23 @@ $dark: #2d4180;
 // media queries
 
 @mixin media-xsm {
-    @media screen and (min-width: 0px) {
+    @media screen and (max-width: 576px) {
       @content;
     }
   }
   @mixin media-sm {
-    @media screen and (min-width: 576px) {
+    @media screen and (max-width: 768px) {
       @content;
     }
   }
   @mixin media-md {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       @content;
     }
   }
+
+  @mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
