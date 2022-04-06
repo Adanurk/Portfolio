@@ -1,116 +1,111 @@
-$secondColor: #2A2F3F;
-$primaryColor: #2D4180;
-$backColor: #A5AFCA;
+$secondColor: #2a2f3f;
+$primaryColor: #364e98;
+$backColor: #a5afca;
 
-@mixin navi{
-    ul{
-        display: flex;
-        padding: 7px;
-        justify-content: center;
-        li{
-            padding: 5px;
-            margin: auto 10px;
-            color: $secondColor;
-            a{
-            color: $secondColor;
-            text-decoration: none;
-            position: relative;
-            padding: 2px;
-            }
-            a::before {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                border-radius: 2px;
-                background-color: $secondColor;
-                bottom: 0;
-                left: 0;
-                transform-origin: right;
-                transform: scaleX(0);
-                transition: transform .3s ease-in-out;
-              }
-              a:hover::before {
-                transform-origin: left;
-                transform: scaleX(1);
-              }
-              a:hover{
-                  color: $primaryColor;
-              }
-        }
+@mixin navi {
+  ul {
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    li {
+      padding: 5px;
+      margin: auto 10px;
+      color: $secondColor;
+      a {
+        color: $secondColor;
+        text-decoration: none;
+        position: relative;
+        padding: 2px;
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $secondColor;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+      a:hover {
+        color: $primaryColor;
+      }
     }
+  }
 }
 
-@mixin contact-me{
-    .contact{
-        width: 100vw;
-        height: 100vh;
-        background-color: $primaryColor;
-        color: white;
-        position: relative;
-        .big{
-            width: 55vw;
-            max-width: 704px;
-            margin:0 22.5vw;
-            position: absolute;
-            top: 50px;
-    
-            h1{
-                font-size: 3rem;
-                
-            }
-            ul{
-                display: flex;
-                padding: 5px 0;
-                li{
-                    padding-right: 5px;
-                    margin-right: 2rem;
-                    a{
-                        color: white;
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-            form{
-                margin-top: 60px;
-                .part{
-                    margin-top: 30px;
-                   label{
-                       display: block;
-                   }
-                   input, textarea{
-                       width: 100%;
-                       background-color: $backColor;
-                       outline: none;
-                       border: none;
-                       padding: 10px;
-                       font-size: 0.8rem;
-                   }
-                }
-                .but{
-                    padding-top:35px;
-                    button{
-                        padding:1rem;
-                        width: 25% ;
-                        border: none;
-                        font-size: 0.9rem;
-                    }
-                }
-                
-    
-            }
-        }
-    
-        footer{
-            position: absolute;
-            bottom: 0;
-            padding: 20px;
-            
-            h6{
-                width: 100vw;
-                text-align: center;
-            }
-        }          
-    
+@mixin contact-me {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primaryColor;
+  color: white;
+  position: relative;
+  .big {
+    width: 55vw;
+    max-width: 704px;
+    margin: 0 22.5vw;
+    position: absolute;
+    top: 50px;
+
+    h1 {
+      font-size: 3rem;
     }
+    ul {
+      display: flex;
+      padding: 5px 0;
+      li {
+        padding-right: 5px;
+        margin-right: 2rem;
+        a {
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    form {
+      margin-top: 60px;
+      .part {
+        margin-top: 30px;
+        label {
+          display: block;
+        }
+        input,
+        textarea {
+          width: 100%;
+          background-color: $backColor;
+          outline: none;
+          border: none;
+          padding: 10px;
+          font-size: 0.8rem;
+        }
+      }
+      .but {
+        padding-top: 35px;
+        button {
+          padding: 1rem;
+          width: 25%;
+          border: none;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+
+    h6 {
+      width: 100vw;
+      text-align: center;
+    }
+  }
 }

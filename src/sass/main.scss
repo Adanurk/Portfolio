@@ -39,3 +39,36 @@ main{
 .contact{
     @include contact-me;         
 }
+
+.about-me{
+    width: 100vw;
+    height: 100vh;
+    max-height: 816px;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
+    grid-template-rows:repeat(11, 1fr);
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    .img-cont{
+        grid-row: 2 / 10;
+        grid-column: 3 / 8;;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .heading{
+        grid-row: 2 / 10 ;
+        grid-column: 8 / 13;
+         .huge{
+            font-size:5rem;
+            color: $primaryColor;
+            margin: auto 0;
+        }
+    }
+}
+
+.story{
+
+}

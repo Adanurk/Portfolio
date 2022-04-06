@@ -20,10 +20,10 @@ nav ul {
 nav ul li {
   padding: 5px;
   margin: auto 10px;
-  color: #2A2F3F;
+  color: #2a2f3f;
 }
 nav ul li a {
-  color: #2A2F3F;
+  color: #2a2f3f;
   text-decoration: none;
   position: relative;
   padding: 2px;
@@ -34,7 +34,7 @@ nav ul li a::before {
   width: 100%;
   height: 2px;
   border-radius: 2px;
-  background-color: #2A2F3F;
+  background-color: #2a2f3f;
   bottom: 0;
   left: 0;
   transform-origin: right;
@@ -46,7 +46,7 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 nav ul li a:hover {
-  color: #2D4180;
+  color: #364e98;
 }
 
 main {
@@ -56,7 +56,7 @@ main {
   padding: 10px;
 }
 main h1 {
-  color: #2D4180;
+  color: #364e98;
   font-size: 4rem;
   line-height: 3rem;
   margin-bottom: 2px;
@@ -75,7 +75,7 @@ main .car img {
 .contact {
   width: 100vw;
   height: 100vh;
-  background-color: #2D4180;
+  background-color: #364e98;
   color: white;
   position: relative;
 }
@@ -110,9 +110,10 @@ main .car img {
 .contact .big form .part label {
   display: block;
 }
-.contact .big form .part input, .contact .big form .part textarea {
+.contact .big form .part input,
+.contact .big form .part textarea {
   width: 100%;
-  background-color: #A5AFCA;
+  background-color: #a5afca;
   outline: none;
   border: none;
   padding: 10px;
@@ -135,6 +136,35 @@ main .car img {
 .contact footer h6 {
   width: 100vw;
   text-align: center;
+}
+
+.about-me {
+  width: 100vw;
+  height: 100vh;
+  max-height: 816px;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
+  grid-template-rows: repeat(11, 1fr);
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+.about-me .img-cont {
+  grid-row: 2/10;
+  grid-column: 3/8;
+}
+.about-me .img-cont img {
+  width: 100%;
+  height: 100%;
+}
+.about-me .heading {
+  grid-row: 2/10;
+  grid-column: 8/13;
+}
+.about-me .heading .huge {
+  font-size: 5rem;
+  color: #364e98;
+  margin: auto 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
