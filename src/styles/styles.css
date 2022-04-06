@@ -151,6 +151,9 @@ main .car img {
   column-gap: 1.5rem;
 }
 .about-me .img-cont {
+  background-image: url(../images/christina-wocintechchat-com-9-ohfp-Dicg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
   grid-row: 2/10;
   grid-column: 3/8;
 }

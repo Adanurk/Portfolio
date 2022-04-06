@@ -48,6 +48,9 @@ main{
     margin-bottom: 1rem;
     @include grid;
     .img-cont{
+        background-image: url(../images/christina-wocintechchat-com-9-ohfp-Dicg-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
         grid-row: 2 / 10;
         grid-column: 3 / 8;;
         img{
