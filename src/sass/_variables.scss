@@ -11,6 +11,11 @@ $dark: #2D4180;
     column-gap: 1.5rem;
 }
 
+@mixin transition($sec) {
+    transition: all $sec;
+  }
+  
+
 @mixin navi {
   ul {
     display: flex;
@@ -118,3 +123,4 @@ $dark: #2D4180;
     }
   }
 }
+

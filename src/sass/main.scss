@@ -1,103 +1,145 @@
 @import "variables";
 @import "reset";
 
-body{
-    font-family: 'Lora', serif;
+body {
+  font-family: "Lora", serif;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-nav{
-    @include navi;
+nav {
+  @include navi;
 }
 
-main{
-    width: 55vw;
+main {
+  width: 55vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+  h1 {
+    color: $primaryColor;
+    font-size: 4rem;
+    line-height: 3rem;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+  .bottom {
+    text-align: end;
+  }
+  .car {
+    z-index: -2;
+    img {
+      max-width: 55vw;
+    }
+  }
+}
+
+.contact {
+  @include contact-me;
+  background-color: $dark;
+}
+
+.about-me {
+  width: 100vw;
+  height: 100vh;
+  max-height: 750px;
+  margin-bottom: 1rem;
+  @include grid;
+  .img-cont {
+    background-image: url(../images/christina-wocintechchat-com-9-ohfp-Dicg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2 / 10;
+    grid-column: 3 / 8;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .heading {
+    grid-row: 2 / 10;
+    grid-column: 8 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .huge {
+      font-size: 5rem;
+      color: $primaryColor;
+      margin: auto 0;
+    }
+  }
+}
+
+.story {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primaryColor;
+  color: white;
+  @include grid;
+  .p-huge {
+    grid-column: 3 / 12;
+    grid-row: 3 / 6;
+    font-size: 2rem;
+  }
+  .p-body-a {
+    grid-column: 3 / 6;
+    grid-row: 6 / 7;
+  }
+  .div-a {
+    grid-column: 6 / 13;
+    grid-row: 6 / 9;
+  }
+
+  .p-body-b {
+    grid-column: 3 / 6;
+    grid-row: 9 / 10;
+  }
+
+  .div-b {
+    grid-column: 6 / 13;
+    grid-row: 9 / 12;
+  }
+}
+
+.projects {
+    width: 70vw;
     height: 100vh;
-    margin: 0 auto;
-    padding: 10px;
-    h1{
-        color: $primaryColor;
-        font-size: 4rem;
-        line-height: 3rem;
-        margin-bottom: 2px;
-        margin-top: 2px;
+    &__items {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 5rem;
+      gap: 1rem 1rem;
     }
-    .bottom{
-        text-align: end;
+  
+    &__item {
+      width: 30%;
+      height: 40%;
+      border-bottom: 5px solid $primaryColor;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background-color: $primaryColor;
+        opacity: 0;
+        @include transition(1s);
+      }
+  
+      &:hover::after {
+        opacity: 0.7;
+      }
     }
-    .car{
-        z-index: -2;
-        img{
-            max-width: 55vw;
-        }
-    }
-}
-
-.contact{
-    @include contact-me;
-    background-color: $dark;
-}
-
-.about-me{
-    width: 100vw;
-    height: 100vh;
-    max-height: 816px;
-    margin-bottom: 1rem;
-    @include grid;
-    .img-cont{
-        background-image: url(../images/christina-wocintechchat-com-9-ohfp-Dicg-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 2 / 10;
-        grid-column: 3 / 8;;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .heading{
-        grid-row: 2 / 10 ;
-        grid-column: 8 / 13;
-         .huge{
-            font-size:5rem;
-            color: $primaryColor;
-            margin: auto 0;
-        }
-    }
-}
-
-.story{
-    width: 100vw;
-    height: 100vh;
-    background-color: $primaryColor;
-    color: white;
-    @include grid;
-    .p-huge{
-        grid-column: 3 / 12;
-        grid-row: 3 / 6;
-        font-size: 2rem;
-    }
-    .p-body-a{
-        grid-column: 3 / 6 ;
-        grid-row: 6 / 7;
-    }
-    .div-a{
-        grid-column: 6 / 13;
-        grid-row: 6 / 9;
-
-    }
-
-    .p-body-b{
-        grid-column: 3 / 6 ;
-        grid-row: 9 / 10 ;
-    }
-
-    .div-b{
-        grid-column: 6 / 13;
-        grid-row: 9 / 12 ;
-    }
-}
-
+  }
+  
