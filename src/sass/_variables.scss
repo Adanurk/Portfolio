@@ -1,6 +1,15 @@
 $secondColor: #2a2f3f;
 $primaryColor: #364e98;
 $backColor: #a5afca;
+$dark: #2D4180;
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
+    grid-template-rows:repeat(11, 1fr);
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+}
 
 @mixin navi {
   ul {

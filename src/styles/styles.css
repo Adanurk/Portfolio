@@ -78,6 +78,7 @@ main .car img {
   background-color: #364e98;
   color: white;
   position: relative;
+  background-color: #2D4180;
 }
 .contact .big {
   width: 55vw;
@@ -165,6 +166,39 @@ main .car img {
   font-size: 5rem;
   color: #364e98;
   margin: auto 0;
+}
+
+.story {
+  width: 100vw;
+  height: 100vh;
+  background-color: #364e98;
+  color: white;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
+  grid-template-rows: repeat(11, 1fr);
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+.story .p-huge {
+  grid-column: 4/13;
+  grid-row: 4/7;
+  font-size: 2rem;
+}
+.story .p-body-a {
+  grid-column: 4/7;
+  grid-row: 8/9;
+}
+.story .div-a {
+  grid-column: 7/14;
+  grid-row: 8/11;
+}
+.story .p-body-b {
+  grid-column: 4/7;
+  grid-row: 12/13;
+}
+.story .div-b {
+  grid-column: 7/14;
+  grid-row: 12/15;
 }
 
 /*# sourceMappingURL=styles.css.map */

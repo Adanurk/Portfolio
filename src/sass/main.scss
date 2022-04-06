@@ -37,7 +37,8 @@ main{
 }
 
 .contact{
-    @include contact-me;         
+    @include contact-me;
+    background-color: $dark;
 }
 
 .about-me{
@@ -45,11 +46,7 @@ main{
     height: 100vh;
     max-height: 816px;
     margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
-    grid-template-rows:repeat(11, 1fr);
-    row-gap: 1rem;
-    column-gap: 1.5rem;
+    @include grid;
     .img-cont{
         grid-row: 2 / 10;
         grid-column: 3 / 8;;
@@ -70,5 +67,32 @@ main{
 }
 
 .story{
+    width: 100vw;
+    height: 100vh;
+    background-color: $primaryColor;
+    color: white;
+    @include grid;
+    .p-huge{
+        grid-column: 4 / 13;
+        grid-row: 4 / 7;
+        font-size: 2rem;
+    }
+    .p-body-a{
+        grid-column: 4 / 7 ;
+        grid-row: 8 / 9;
+    }
+    .div-a{
+        grid-column: 7 / 14;
+        grid-row: 8 / 11;
+    }
 
+    .p-body-b{
+        grid-column: 4 / 7 ;
+        grid-row: 12 / 13 ;
+    }
+
+    .div-b{
+        grid-column: 7 / 14;
+        grid-row: 12 / 15 ;
+    }
 }
