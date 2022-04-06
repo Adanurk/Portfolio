@@ -180,25 +180,25 @@ main .car img {
   column-gap: 1.5rem;
 }
 .story .p-huge {
-  grid-column: 4/13;
-  grid-row: 4/7;
+  grid-column: 3/12;
+  grid-row: 3/6;
   font-size: 2rem;
 }
 .story .p-body-a {
-  grid-column: 4/7;
-  grid-row: 8/9;
+  grid-column: 3/6;
+  grid-row: 6/7;
 }
 .story .div-a {
-  grid-column: 7/14;
-  grid-row: 8/11;
+  grid-column: 6/13;
+  grid-row: 6/9;
 }
 .story .p-body-b {
-  grid-column: 4/7;
-  grid-row: 12/13;
+  grid-column: 3/6;
+  grid-row: 9/10;
 }
 .story .div-b {
-  grid-column: 7/14;
-  grid-row: 12/15;
+  grid-column: 6/13;
+  grid-row: 9/12;
 }
 
 /*# sourceMappingURL=styles.css.map */
