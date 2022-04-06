@@ -1,20 +1,19 @@
 $secondColor: #2a2f3f;
 $primaryColor: #364e98;
 $backColor: #a5afca;
-$dark: #2D4180;
+$dark: #2d4180;
 
-@mixin grid{
-    display: grid;
-    grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
-    grid-template-rows:repeat(11, 1fr);
-    row-gap: 1rem;
-    column-gap: 1.5rem;
+@mixin grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(12, 70px) 1.5fr;
+  grid-template-rows: repeat(11, 1fr);
+  row-gap: 1rem;
+  column-gap: 1.5rem;
 }
 
 @mixin transition($sec) {
-    transition: all $sec;
-  }
-  
+  transition: all $sec;
+}
 
 @mixin navi {
   ul {
@@ -124,3 +123,20 @@ $dark: #2D4180;
   }
 }
 
+// media queries
+
+@mixin media-xsm {
+    @media screen and (min-width: 0px) {
+      @content;
+    }
+  }
+  @mixin media-sm {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  @mixin media-md {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  }
