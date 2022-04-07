@@ -12,11 +12,18 @@ Portfolio
 │    package.json
 |    package-lock.json
 └───src
-│    │    index.html
+│    │
 │    └───styles
-|    └───scss
-|    |    └───main.scss
+|        └───styles.css
+|    └───sass
+|        └───main.scss
+|        └───_reset.scss
+|        └───_variables.scss
 |    └───images
-|    └───fonts
-└───dist
+└───public
+│    └───index.html
+│    └───about.html
+│    └───contact.html
+│    └───projects.html
+     
 ```
