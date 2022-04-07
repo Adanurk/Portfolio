@@ -1,6 +1,6 @@
 # Portfolio
 
-the (preview)[https://adanurk.github.io/Portfolio/]
+
 
 ## Description
 
