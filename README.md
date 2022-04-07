@@ -21,9 +21,9 @@ Portfolio
 |        └───_variables.scss
 |    └───images
 └───public
-│    └───index.html
 │    └───about.html
 │    └───contact.html
 │    └───projects.html
+└───index.html
      
 ```
