@@ -1,6 +1,10 @@
 # Portfolio
 
+<<<<<<< HEAD
 A portfolio Webpage
+=======
+The **[Preview](https://adanurk.github.io/Portfolio/)** of the project.
+>>>>>>> f29466873a04adf4409db51b3e6b7b1f8a70cfad
 
 ## Description
 
