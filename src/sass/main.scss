@@ -372,6 +372,13 @@ main {
   }
 
   @include media-xsm {
+    main{
+      h1{
+        font-size: 2.5rem ;
+      }
+    }
+
+
     .about-me {
       width: 90vw;
       height: 60vh;
